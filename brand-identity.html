@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableTrip | Brand Identity System</title>
+    <style>
+        :root {
+            /* TableTrip Brand Palette */
+            --paprika: #BC4639;
+            --saffron: #EBB64D;
+            --cilantro: #5D8233;
+            --salt: #F9F7F2;
+            --peppercorn: #2D2926;
+            --clay: #D4A373;
+            
+            --font-main: 'Playfair Display', serif;
+            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700;900&display=swap');
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--salt);
+            color: var(--peppercorn);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--peppercorn);
+            color: var(--salt);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .logo-display {
+            background: white;
+            padding: 4rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 4rem;
+        }
+
+        .logo-svg {
+            width: 300px;
+            height: auto;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-main);
+            color: var(--peppercorn);
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--saffron);
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Palette Grid */
+        .palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .color-swatch {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .color-box {
+            height: 120px;
+        }
+
+        .color-info {
+            padding: 1rem;
+            background: white;
+            font-size: 0.85rem;
+        }
+
+        /* Recipe Card Preview */
+        .recipe-card-preview {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .recipe-image {
+            width: 40%;
+            background-color: var(--clay);
+            background-image: url('https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&q=80&w=800');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .recipe-content {
+            width: 60%;
+            padding: 2.5rem;
+            position: relative;
+        }
+
+        .recipe-tag {
+            display: inline-block;
+            background: var(--saffron);
+            color: var(--peppercorn);
+            padding: 0.2rem 0.8rem;
+            font-weight: bold;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .recipe-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .spice-list {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+
+        .spice-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .spice-circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--paprika);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 4rem;
+            background: var(--peppercorn);
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TableTrip Brand Identity</h1>
+        <p>Global Flavors, Weeknight Speed.</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2 class="section-title">01. Primary Logo</h2>
+            <div class="logo-display">
+                <!-- SVG LOGO -->
+                <svg class="logo-svg" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Icon: Compass-Spoon -->
+                    <circle cx="50" cy="60" r="35" fill="none" stroke="#2D2926" stroke-width="4"/>
+                    <path d="M50 35 L50 85 M35 60 L65 60" stroke="#EBB64D" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="50" cy="60" r="8" fill="#BC4639"/>
+                    
+                    <!-- Typography -->
+                    <text x="100" y="75" font-family="'Playfair Display', serif" font-weight="900" font-size="42" fill="#2D2926">Table</text>
+                    <text x="215" y="75" font-family="'Inter', sans-serif" font-weight="400" font-size="42" fill="#BC4639" style="letter-spacing: 1px;">Trip</text>
+                </svg>
+                <p style="margin-top: 2rem; color: #666;">The "Compass-Spoon" symbol represents the intersection of travel and home cooking.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">02. Color Palette</h2>
+            <div class="palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: var(--paprika);"></div>
+                    <div class="color-info"><strong>Paprika Red</strong><br>#BC4639</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: var(--saffron);"></div>
+                    <div class="color-info"><strong>Saffron Gold</strong><br>#EBB64D</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: var(--cilantro);"></div>
+                    <div class="color-info"><strong>Cilantro Green</strong><br>#5D8233</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: var(--peppercorn);"></div>
+                    <div class="color-info"><strong>Peppercorn</strong><br>#2D2926</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: var(--salt);"></div>
+                    <div class="color-info"><strong>Sea Salt</strong><br>#F9F7F2</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">03. Physical Recipe Card Concept</h2>
+            <p style="margin-bottom: 2rem;">A 5x7 printed card included in every kit. Front: Inspiration & Ingredients. Back: 20-minute instructions.</p>
+            
+            <div class="recipe-card-preview">
+                <div class="recipe-image"></div>
+                <div class="recipe-content">
+                    <span class="recipe-tag">South Asia // 20 MINS</span>
+                    <h3 class="recipe-title">Butter Chicken Express</h3>
+                    <div class="recipe-meta">
+                        <span>Difficulty: Easy</span>
+                        <span>Serves: 2-4</span>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #444;">Experience the streets of Delhi in less time than it takes to order takeout. This kit balances smoky paprika with cool cardamom.</p>
+                    
+                    <div class="spice-list">
+                        <strong style="font-size: 0.8rem; text-transform: uppercase;">Included Spices:</strong>
+                        <div class="spice-item"><div class="spice-circle"></div> <span>Kashmiri Chili Blend</span></div>
+                        <div class="spice-item"><div class="spice-circle" style="background-color: var(--saffron);"></div> <span>Garam Masala Gold</span></div>
+                        <div class="spice-item"><div class="spice-circle" style="background-color: var(--cilantro);"></div> <span>Dried Fenugreek Leaves</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 TableTrip Brand Guidelines | Strictly Confidential
+    </footer>
+
+</body>
+</html>
